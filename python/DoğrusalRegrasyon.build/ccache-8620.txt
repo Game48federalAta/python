@@ -1,0 +1,492 @@
+[2024-09-01T16:47:56.161055 8336 ] === CCACHE 4.8.2 STARTED =========================================
+[2024-09-01T16:47:56.161183 8336 ] Configuration file: C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache\ccache.conf
+[2024-09-01T16:47:56.161216 8336 ] System configuration file: C:\ProgramData\ccache\ccache.conf
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) absolute_paths_in_stderr = false
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) base_dir = 
+[2024-09-01T16:47:56.161216 8336 ] Config: (environment) cache_dir = C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) compiler = 
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) compiler_check = mtime
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) compiler_type = auto
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) compression = true
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) compression_level = 0
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) cpp_extension = 
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) debug = false
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) debug_dir = 
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) depend_mode = false
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) direct_mode = true
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) disable = false
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) extra_files_to_hash = 
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) file_clone = false
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) hard_link = false
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) hash_dir = true
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) ignore_headers_in_manifest = 
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) ignore_options = 
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) inode_cache = true
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) keep_comments_cpp = false
+[2024-09-01T16:47:56.161216 8336 ] Config: (environment) log_file = D:\python\DoðrusalRegrasyon.build\ccache-8620.txt
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) max_files = 0
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) max_size = 5.0 GiB
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) msvc_dep_prefix = Note: including file:
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) namespace = 
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) path = 
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) pch_external_checksum = false
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) prefix_command = 
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) prefix_command_cpp = 
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) read_only = false
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) read_only_direct = false
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) recache = false
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) remote_only = false
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) remote_storage = 
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) reshare = false
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) run_second_cpp = true
+[2024-09-01T16:47:56.161216 8336 ] Config: (environment) sloppiness = include_file_ctime, include_file_mtime
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) stats = true
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) stats_log = 
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) temporary_dir = C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2024-09-01T16:47:56.161216 8336 ] Config: (default) umask = 
+[2024-09-01T16:47:56.161335 8336 ] Command line: C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\ccache.exe C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe -o __constants.o -c -std=c11 -flto=1 -fuse-linker-plugin -fno-fat-lto-objects -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -D_NUITKA_FILE_REFERENCE_ORIGINAL_MODE -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\zlib -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\include -I. -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\include -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\static_src -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\libbacktrace __constants.c
+[2024-09-01T16:47:56.166117 8336 ] Hostname: DESKTOP-6BES62I
+[2024-09-01T16:47:56.166146 8336 ] Working directory: D:/python/DoðrusalRegrasyon.build
+[2024-09-01T16:47:56.166169 8336 ] Compiler: C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe
+[2024-09-01T16:47:56.166181 8336 ] Compiler type: gcc
+[2024-09-01T16:47:56.166583 8336 ] Source file: __constants.c
+[2024-09-01T16:47:56.166599 8336 ] Object file: __constants.o
+[2024-09-01T16:47:56.166816 8336 ] Trying direct lookup
+[2024-09-01T16:47:56.167001 8336 ] Manifest key: 152cgessnvls8somrr3fdt1880r5gvklo
+[2024-09-01T16:47:56.167190 8336 ] Retrieved 152cgessnvls8somrr3fdt1880r5gvklo from local storage (C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/5/2cgessnvls8somrr3fdt1880r5gvkloM)
+[2024-09-01T16:47:58.488873 8336 ] Got result key from manifest
+[2024-09-01T16:47:58.488920 8336 ] Result key: da22v56i45e9bberre3krgggpi1clubf4
+[2024-09-01T16:47:58.490601 8336 ] Retrieved da22v56i45e9bberre3krgggpi1clubf4 from local storage (C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/a/22v56i45e9bberre3krgggpi1clubf4R)
+[2024-09-01T16:47:58.491064 8336 ] Reading embedded entry #0 .o (17883 bytes)
+[2024-09-01T16:47:58.491086 8336 ] Writing to __constants.o
+[2024-09-01T16:47:58.498898 8336 ] Succeeded getting cached result
+[2024-09-01T16:47:58.498992 8336 ] Result: direct_cache_hit
+[2024-09-01T16:47:58.499007 8336 ] Result: local_storage_hit
+[2024-09-01T16:47:58.499017 8336 ] Result: local_storage_read_hit
+[2024-09-01T16:47:58.499028 8336 ] Result: local_storage_read_hit
+[2024-09-01T16:47:58.499051 8336 ] Acquiring C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/0/stats.lock
+[2024-09-01T16:47:58.500354 8336 ] Acquired C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/0/stats.lock
+[2024-09-01T16:47:58.508314 8336 ] Releasing C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/0/stats.lock
+[2024-09-01T16:47:58.508419 8336 ] Released C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/0/stats.lock
+[2024-09-01T16:47:59.161710 3364 ] === CCACHE 4.8.2 STARTED =========================================
+[2024-09-01T16:47:59.161815 3364 ] Configuration file: C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache\ccache.conf
+[2024-09-01T16:47:59.161834 3364 ] System configuration file: C:\ProgramData\ccache\ccache.conf
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) absolute_paths_in_stderr = false
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) base_dir = 
+[2024-09-01T16:47:59.161834 3364 ] Config: (environment) cache_dir = C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) compiler = 
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) compiler_check = mtime
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) compiler_type = auto
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) compression = true
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) compression_level = 0
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) cpp_extension = 
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) debug = false
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) debug_dir = 
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) depend_mode = false
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) direct_mode = true
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) disable = false
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) extra_files_to_hash = 
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) file_clone = false
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) hard_link = false
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) hash_dir = true
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) ignore_headers_in_manifest = 
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) ignore_options = 
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) inode_cache = true
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) keep_comments_cpp = false
+[2024-09-01T16:47:59.161834 3364 ] Config: (environment) log_file = D:\python\DoðrusalRegrasyon.build\ccache-8620.txt
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) max_files = 0
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) max_size = 5.0 GiB
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) msvc_dep_prefix = Note: including file:
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) namespace = 
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) path = 
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) pch_external_checksum = false
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) prefix_command = 
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) prefix_command_cpp = 
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) read_only = false
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) read_only_direct = false
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) recache = false
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) remote_only = false
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) remote_storage = 
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) reshare = false
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) run_second_cpp = true
+[2024-09-01T16:47:59.161834 3364 ] Config: (environment) sloppiness = include_file_ctime, include_file_mtime
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) stats = true
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) stats_log = 
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) temporary_dir = C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2024-09-01T16:47:59.161834 3364 ] Config: (default) umask = 
+[2024-09-01T16:47:59.161932 3364 ] Command line: C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\ccache.exe C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe -o __helpers.o -c -std=c11 -flto=1 -fuse-linker-plugin -fno-fat-lto-objects -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -D_NUITKA_FILE_REFERENCE_ORIGINAL_MODE -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\zlib -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\include -I. -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\include -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\static_src -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\libbacktrace __helpers.c
+[2024-09-01T16:47:59.169477 3364 ] Hostname: DESKTOP-6BES62I
+[2024-09-01T16:47:59.169507 3364 ] Working directory: D:/python/DoðrusalRegrasyon.build
+[2024-09-01T16:47:59.169530 3364 ] Compiler: C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe
+[2024-09-01T16:47:59.169543 3364 ] Compiler type: gcc
+[2024-09-01T16:47:59.169912 3364 ] Source file: __helpers.c
+[2024-09-01T16:47:59.169928 3364 ] Object file: __helpers.o
+[2024-09-01T16:47:59.170158 3364 ] Trying direct lookup
+[2024-09-01T16:47:59.170366 3364 ] Manifest key: 47f515i75nlojm2lo9koagf8tuv7t5pes
+[2024-09-01T16:47:59.170568 3364 ] Retrieved 47f515i75nlojm2lo9koagf8tuv7t5pes from local storage (C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/4/7/f515i75nlojm2lo9koagf8tuv7t5pesM)
+[2024-09-01T16:47:59.348264 3364 ] Got result key from manifest
+[2024-09-01T16:47:59.348308 3364 ] Result key: 47c65o5s43k8cqlmrffjms2hbe0dd6fuq
+[2024-09-01T16:47:59.348483 3364 ] Retrieved 47c65o5s43k8cqlmrffjms2hbe0dd6fuq from local storage (C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/4/7/c65o5s43k8cqlmrffjms2hbe0dd6fuqR)
+[2024-09-01T16:47:59.349004 3364 ] Reading embedded entry #0 .o (2651 bytes)
+[2024-09-01T16:47:59.349027 3364 ] Writing to __helpers.o
+[2024-09-01T16:47:59.357245 3364 ] Succeeded getting cached result
+[2024-09-01T16:47:59.357318 3364 ] Result: direct_cache_hit
+[2024-09-01T16:47:59.357331 3364 ] Result: local_storage_hit
+[2024-09-01T16:47:59.357342 3364 ] Result: local_storage_read_hit
+[2024-09-01T16:47:59.357353 3364 ] Result: local_storage_read_hit
+[2024-09-01T16:47:59.357376 3364 ] Acquiring C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/4/stats.lock
+[2024-09-01T16:47:59.358537 3364 ] Acquired C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/4/stats.lock
+[2024-09-01T16:47:59.360180 3364 ] Releasing C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/4/stats.lock
+[2024-09-01T16:47:59.360307 3364 ] Released C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/4/stats.lock
+[2024-09-01T16:48:00.142212 3704 ] === CCACHE 4.8.2 STARTED =========================================
+[2024-09-01T16:48:00.142312 3704 ] Configuration file: C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache\ccache.conf
+[2024-09-01T16:48:00.142331 3704 ] System configuration file: C:\ProgramData\ccache\ccache.conf
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) absolute_paths_in_stderr = false
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) base_dir = 
+[2024-09-01T16:48:00.142331 3704 ] Config: (environment) cache_dir = C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) compiler = 
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) compiler_check = mtime
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) compiler_type = auto
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) compression = true
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) compression_level = 0
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) cpp_extension = 
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) debug = false
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) debug_dir = 
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) depend_mode = false
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) direct_mode = true
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) disable = false
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) extra_files_to_hash = 
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) file_clone = false
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) hard_link = false
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) hash_dir = true
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) ignore_headers_in_manifest = 
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) ignore_options = 
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) inode_cache = true
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) keep_comments_cpp = false
+[2024-09-01T16:48:00.142331 3704 ] Config: (environment) log_file = D:\python\DoðrusalRegrasyon.build\ccache-8620.txt
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) max_files = 0
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) max_size = 5.0 GiB
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) msvc_dep_prefix = Note: including file:
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) namespace = 
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) path = 
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) pch_external_checksum = false
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) prefix_command = 
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) prefix_command_cpp = 
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) read_only = false
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) read_only_direct = false
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) recache = false
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) remote_only = false
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) remote_storage = 
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) reshare = false
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) run_second_cpp = true
+[2024-09-01T16:48:00.142331 3704 ] Config: (environment) sloppiness = include_file_ctime, include_file_mtime
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) stats = true
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) stats_log = 
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) temporary_dir = C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2024-09-01T16:48:00.142331 3704 ] Config: (default) umask = 
+[2024-09-01T16:48:00.142429 3704 ] Command line: C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\ccache.exe C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe -o __loader.o -c -std=c11 -flto=1 -fuse-linker-plugin -fno-fat-lto-objects -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -D_NUITKA_FILE_REFERENCE_ORIGINAL_MODE -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\zlib -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\include -I. -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\include -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\static_src -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\libbacktrace __loader.c
+[2024-09-01T16:48:00.146502 3704 ] Hostname: DESKTOP-6BES62I
+[2024-09-01T16:48:00.146531 3704 ] Working directory: D:/python/DoðrusalRegrasyon.build
+[2024-09-01T16:48:00.146553 3704 ] Compiler: C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe
+[2024-09-01T16:48:00.146566 3704 ] Compiler type: gcc
+[2024-09-01T16:48:00.146940 3704 ] Source file: __loader.c
+[2024-09-01T16:48:00.146956 3704 ] Object file: __loader.o
+[2024-09-01T16:48:00.147188 3704 ] Trying direct lookup
+[2024-09-01T16:48:00.147347 3704 ] Manifest key: 0904rs1sm36utpf1se91e2f8ri0j3p0ai
+[2024-09-01T16:48:00.147461 3704 ] No 0904rs1sm36utpf1se91e2f8ri0j3p0ai in local storage
+[2024-09-01T16:48:00.148134 3704 ] Running preprocessor
+[2024-09-01T16:48:00.148412 3704 ] Executing C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe -std=c11 -flto=1 -fuse-linker-plugin -fno-fat-lto-objects -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -D_NUITKA_FILE_REFERENCE_ORIGINAL_MODE -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\zlib -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\include -I. -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\include -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\static_src -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\libbacktrace -E -o C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/cpp_stdout.tmp.JbtCHc.i __loader.c
+[2024-09-01T16:48:01.770009 3704 ] Got result key from preprocessor
+[2024-09-01T16:48:01.770043 3704 ] Result key: b14e3kfdmdnmod2nq6ud1himkv9knfsi0
+[2024-09-01T16:48:01.770166 3704 ] No b14e3kfdmdnmod2nq6ud1himkv9knfsi0 in local storage
+[2024-09-01T16:48:01.770193 3704 ] Running real compiler
+[2024-09-01T16:48:01.770860 3704 ] Executing C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe -std=c11 -flto=1 -fuse-linker-plugin -fno-fat-lto-objects -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -D_NUITKA_FILE_REFERENCE_ORIGINAL_MODE -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\zlib -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\include -I. -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\include -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\static_src -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\libbacktrace -c -fdiagnostics-color -o __loader.o __loader.c
+[2024-09-01T16:48:02.971779 3704 ] Using default compression level 1
+[2024-09-01T16:48:02.971855 3704 ] Storing embedded entry #0 .o (11267 bytes) from __loader.o
+[2024-09-01T16:48:02.973121 3704 ] Acquiring C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_b1.lock
+[2024-09-01T16:48:02.973329 3704 ] Acquired C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_b1.lock
+[2024-09-01T16:48:02.980642 3704 ] Stored b14e3kfdmdnmod2nq6ud1himkv9knfsi0 in local storage (C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/1/4e3kfdmdnmod2nq6ud1himkv9knfsi0R)
+[2024-09-01T16:48:02.980738 3704 ] Acquiring C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/stats.lock
+[2024-09-01T16:48:03.001455 3704 ] Acquired C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/stats.lock
+[2024-09-01T16:48:03.008898 3704 ] Releasing C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/stats.lock
+[2024-09-01T16:48:03.009021 3704 ] Released C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/stats.lock
+[2024-09-01T16:48:03.009050 3704 ] Releasing C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_b1.lock
+[2024-09-01T16:48:03.009134 3704 ] Released C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_b1.lock
+[2024-09-01T16:48:03.027934 3704 ] Added result key to manifest 0904rs1sm36utpf1se91e2f8ri0j3p0ai
+[2024-09-01T16:48:03.027972 3704 ] Using default compression level 1
+[2024-09-01T16:48:03.029188 3704 ] Acquiring C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_09.lock
+[2024-09-01T16:48:03.029393 3704 ] Acquired C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_09.lock
+[2024-09-01T16:48:03.033799 3704 ] Stored 0904rs1sm36utpf1se91e2f8ri0j3p0ai in local storage (C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/9/04rs1sm36utpf1se91e2f8ri0j3p0aiM)
+[2024-09-01T16:48:03.033888 3704 ] Acquiring C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/stats.lock
+[2024-09-01T16:48:03.034431 3704 ] Acquired C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/stats.lock
+[2024-09-01T16:48:03.036725 3704 ] Releasing C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/stats.lock
+[2024-09-01T16:48:03.036824 3704 ] Released C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/stats.lock
+[2024-09-01T16:48:03.036844 3704 ] Releasing C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_09.lock
+[2024-09-01T16:48:03.036926 3704 ] Released C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_09.lock
+[2024-09-01T16:48:03.037058 3704 ] Result: cache_miss
+[2024-09-01T16:48:03.037075 3704 ] Result: direct_cache_miss
+[2024-09-01T16:48:03.037087 3704 ] Result: local_storage_miss
+[2024-09-01T16:48:03.037097 3704 ] Result: local_storage_read_miss
+[2024-09-01T16:48:03.037108 3704 ] Result: local_storage_read_miss
+[2024-09-01T16:48:03.037118 3704 ] Result: local_storage_write
+[2024-09-01T16:48:03.037129 3704 ] Result: local_storage_write
+[2024-09-01T16:48:03.037139 3704 ] Result: preprocessed_cache_miss
+[2024-09-01T16:48:03.037153 3704 ] Acquiring C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/8/stats.lock
+[2024-09-01T16:48:03.037670 3704 ] Acquired C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/8/stats.lock
+[2024-09-01T16:48:03.038387 3704 ] Releasing C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/8/stats.lock
+[2024-09-01T16:48:03.038477 3704 ] Released C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/8/stats.lock
+[2024-09-01T16:48:03.038562 3704 ] Trying to acquire C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/auto_cleanup.lock
+[2024-09-01T16:48:03.038733 3704 ] Acquired C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/auto_cleanup.lock
+[2024-09-01T16:48:03.051283 3704 ] No automatic cleanup needed (size 3.4 MiB, files 14, max size 5.0 GiB)
+[2024-09-01T16:48:03.051314 3704 ] Releasing C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/auto_cleanup.lock
+[2024-09-01T16:48:03.051429 3704 ] Released C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/auto_cleanup.lock
+[2024-09-01T16:48:03.051718 3704 ] Unlink C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/stderr.tmp.tMXA3V.tmp
+[2024-09-01T16:48:03.051863 3704 ] Unlink C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/stdout.tmp.Gq1afE.tmp
+[2024-09-01T16:48:03.052012 3704 ] Unlink C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/stderr.tmp.eCcnjE.tmp
+[2024-09-01T16:48:03.052288 3704 ] Unlink C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/cpp_stdout.tmp.JbtCHc.i
+[2024-09-01T16:48:03.878675 4040 ] === CCACHE 4.8.2 STARTED =========================================
+[2024-09-01T16:48:03.878773 4040 ] Configuration file: C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache\ccache.conf
+[2024-09-01T16:48:03.878792 4040 ] System configuration file: C:\ProgramData\ccache\ccache.conf
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) absolute_paths_in_stderr = false
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) base_dir = 
+[2024-09-01T16:48:03.878792 4040 ] Config: (environment) cache_dir = C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) compiler = 
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) compiler_check = mtime
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) compiler_type = auto
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) compression = true
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) compression_level = 0
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) cpp_extension = 
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) debug = false
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) debug_dir = 
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) depend_mode = false
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) direct_mode = true
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) disable = false
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) extra_files_to_hash = 
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) file_clone = false
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) hard_link = false
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) hash_dir = true
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) ignore_headers_in_manifest = 
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) ignore_options = 
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) inode_cache = true
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) keep_comments_cpp = false
+[2024-09-01T16:48:03.878792 4040 ] Config: (environment) log_file = D:\python\DoðrusalRegrasyon.build\ccache-8620.txt
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) max_files = 0
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) max_size = 5.0 GiB
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) msvc_dep_prefix = Note: including file:
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) namespace = 
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) path = 
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) pch_external_checksum = false
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) prefix_command = 
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) prefix_command_cpp = 
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) read_only = false
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) read_only_direct = false
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) recache = false
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) remote_only = false
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) remote_storage = 
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) reshare = false
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) run_second_cpp = true
+[2024-09-01T16:48:03.878792 4040 ] Config: (environment) sloppiness = include_file_ctime, include_file_mtime
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) stats = true
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) stats_log = 
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) temporary_dir = C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2024-09-01T16:48:03.878792 4040 ] Config: (default) umask = 
+[2024-09-01T16:48:03.878889 4040 ] Command line: C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\ccache.exe C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe -o module.__main__.o -c -std=c11 -flto=1 -fuse-linker-plugin -fno-fat-lto-objects -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -D_NUITKA_FILE_REFERENCE_ORIGINAL_MODE -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\zlib -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\include -I. -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\include -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\static_src -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\libbacktrace module.__main__.c
+[2024-09-01T16:48:03.886880 4040 ] Hostname: DESKTOP-6BES62I
+[2024-09-01T16:48:03.886909 4040 ] Working directory: D:/python/DoðrusalRegrasyon.build
+[2024-09-01T16:48:03.886932 4040 ] Compiler: C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe
+[2024-09-01T16:48:03.886945 4040 ] Compiler type: gcc
+[2024-09-01T16:48:03.887314 4040 ] Source file: module.__main__.c
+[2024-09-01T16:48:03.887330 4040 ] Object file: module.__main__.o
+[2024-09-01T16:48:03.887547 4040 ] Trying direct lookup
+[2024-09-01T16:48:03.888460 4040 ] Manifest key: c4b0pdh7939grldvmhea23d58fqpp8cao
+[2024-09-01T16:48:03.888588 4040 ] No c4b0pdh7939grldvmhea23d58fqpp8cao in local storage
+[2024-09-01T16:48:03.889276 4040 ] Running preprocessor
+[2024-09-01T16:48:03.889541 4040 ] Executing C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe -std=c11 -flto=1 -fuse-linker-plugin -fno-fat-lto-objects -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -D_NUITKA_FILE_REFERENCE_ORIGINAL_MODE -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\zlib -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\include -I. -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\include -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\static_src -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\libbacktrace -E -o C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/cpp_stdout.tmp.b1f8Cd.i module.__main__.c
+[2024-09-01T16:48:07.656642 4040 ] Got result key from preprocessor
+[2024-09-01T16:48:07.656677 4040 ] Result key: ceefbjmtc4b3pvfrgrjd14c2qatl3ufg4
+[2024-09-01T16:48:07.656801 4040 ] No ceefbjmtc4b3pvfrgrjd14c2qatl3ufg4 in local storage
+[2024-09-01T16:48:07.656827 4040 ] Running real compiler
+[2024-09-01T16:48:07.657353 4040 ] Executing C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe -std=c11 -flto=1 -fuse-linker-plugin -fno-fat-lto-objects -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -D_NUITKA_FILE_REFERENCE_ORIGINAL_MODE -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\zlib -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\include -I. -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\include -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\static_src -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\libbacktrace -c -fdiagnostics-color -o module.__main__.o module.__main__.c
+[2024-09-01T16:48:12.625316 4040 ] Using default compression level 1
+[2024-09-01T16:48:12.625513 4040 ] Storing embedded entry #0 .o (236433 bytes) from module.__main__.o
+[2024-09-01T16:48:12.627405 4040 ] Acquiring C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_ce.lock
+[2024-09-01T16:48:12.627633 4040 ] Acquired C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_ce.lock
+[2024-09-01T16:48:12.635592 4040 ] Stored ceefbjmtc4b3pvfrgrjd14c2qatl3ufg4 in local storage (C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/e/efbjmtc4b3pvfrgrjd14c2qatl3ufg4R)
+[2024-09-01T16:48:12.635698 4040 ] Acquiring C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/stats.lock
+[2024-09-01T16:48:12.636176 4040 ] Acquired C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/stats.lock
+[2024-09-01T16:48:12.637842 4040 ] Releasing C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/stats.lock
+[2024-09-01T16:48:12.637945 4040 ] Released C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/stats.lock
+[2024-09-01T16:48:12.637972 4040 ] Releasing C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_ce.lock
+[2024-09-01T16:48:12.638055 4040 ] Released C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_ce.lock
+[2024-09-01T16:48:12.661523 4040 ] Added result key to manifest c4b0pdh7939grldvmhea23d58fqpp8cao
+[2024-09-01T16:48:12.661554 4040 ] Using default compression level 1
+[2024-09-01T16:48:12.662701 4040 ] Acquiring C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_c4.lock
+[2024-09-01T16:48:12.662894 4040 ] Acquired C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_c4.lock
+[2024-09-01T16:48:12.663304 4040 ] Stored c4b0pdh7939grldvmhea23d58fqpp8cao in local storage (C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/4/b0pdh7939grldvmhea23d58fqpp8caoM)
+[2024-09-01T16:48:12.663386 4040 ] Acquiring C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/stats.lock
+[2024-09-01T16:48:12.663591 4040 ] Acquired C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/stats.lock
+[2024-09-01T16:48:12.669909 4040 ] Releasing C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/stats.lock
+[2024-09-01T16:48:12.670010 4040 ] Released C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/stats.lock
+[2024-09-01T16:48:12.670031 4040 ] Releasing C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_c4.lock
+[2024-09-01T16:48:12.670110 4040 ] Released C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/subdir_c4.lock
+[2024-09-01T16:48:12.670237 4040 ] Result: cache_miss
+[2024-09-01T16:48:12.670253 4040 ] Result: direct_cache_miss
+[2024-09-01T16:48:12.670264 4040 ] Result: local_storage_miss
+[2024-09-01T16:48:12.670274 4040 ] Result: local_storage_read_miss
+[2024-09-01T16:48:12.670285 4040 ] Result: local_storage_read_miss
+[2024-09-01T16:48:12.670295 4040 ] Result: local_storage_write
+[2024-09-01T16:48:12.670306 4040 ] Result: local_storage_write
+[2024-09-01T16:48:12.670316 4040 ] Result: preprocessed_cache_miss
+[2024-09-01T16:48:12.670329 4040 ] Acquiring C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/8/stats.lock
+[2024-09-01T16:48:12.671013 4040 ] Acquired C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/8/stats.lock
+[2024-09-01T16:48:12.671723 4040 ] Releasing C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/8/stats.lock
+[2024-09-01T16:48:12.671815 4040 ] Released C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/8/stats.lock
+[2024-09-01T16:48:12.671900 4040 ] Trying to acquire C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/auto_cleanup.lock
+[2024-09-01T16:48:12.672071 4040 ] Acquired C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/auto_cleanup.lock
+[2024-09-01T16:48:12.682713 4040 ] No automatic cleanup needed (size 3.6 MiB, files 16, max size 5.0 GiB)
+[2024-09-01T16:48:12.682745 4040 ] Releasing C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/auto_cleanup.lock
+[2024-09-01T16:48:12.682861 4040 ] Released C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/lock/auto_cleanup.lock
+[2024-09-01T16:48:12.683058 4040 ] Unlink C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/stderr.tmp.J65e24.tmp
+[2024-09-01T16:48:12.683198 4040 ] Unlink C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/stdout.tmp.fgr3eW.tmp
+[2024-09-01T16:48:12.683339 4040 ] Unlink C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/stderr.tmp.L5LqLs.tmp
+[2024-09-01T16:48:12.683929 4040 ] Unlink C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/cpp_stdout.tmp.b1f8Cd.i
+[2024-09-01T16:48:13.367264 1636 ] === CCACHE 4.8.2 STARTED =========================================
+[2024-09-01T16:48:13.367346 1636 ] Configuration file: C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache\ccache.conf
+[2024-09-01T16:48:13.367361 1636 ] System configuration file: C:\ProgramData\ccache\ccache.conf
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) absolute_paths_in_stderr = false
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) base_dir = 
+[2024-09-01T16:48:13.367361 1636 ] Config: (environment) cache_dir = C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) compiler = 
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) compiler_check = mtime
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) compiler_type = auto
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) compression = true
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) compression_level = 0
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) cpp_extension = 
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) debug = false
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) debug_dir = 
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) depend_mode = false
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) direct_mode = true
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) disable = false
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) extra_files_to_hash = 
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) file_clone = false
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) hard_link = false
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) hash_dir = true
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) ignore_headers_in_manifest = 
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) ignore_options = 
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) inode_cache = true
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) keep_comments_cpp = false
+[2024-09-01T16:48:13.367361 1636 ] Config: (environment) log_file = D:\python\DoðrusalRegrasyon.build\ccache-8620.txt
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) max_files = 0
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) max_size = 5.0 GiB
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) msvc_dep_prefix = Note: including file:
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) namespace = 
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) path = 
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) pch_external_checksum = false
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) prefix_command = 
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) prefix_command_cpp = 
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) read_only = false
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) read_only_direct = false
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) recache = false
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) remote_only = false
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) remote_storage = 
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) reshare = false
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) run_second_cpp = true
+[2024-09-01T16:48:13.367361 1636 ] Config: (environment) sloppiness = include_file_ctime, include_file_mtime
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) stats = true
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) stats_log = 
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) temporary_dir = C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2024-09-01T16:48:13.367361 1636 ] Config: (default) umask = 
+[2024-09-01T16:48:13.367455 1636 ] Command line: C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\ccache.exe C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe -o static_src\MainProgram.o -c -std=c11 -flto=1 -fuse-linker-plugin -fno-fat-lto-objects -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -D_NUITKA_FILE_REFERENCE_ORIGINAL_MODE -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\zlib -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\include -I. -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\include -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\static_src -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\libbacktrace static_src\MainProgram.c
+[2024-09-01T16:48:13.372098 1636 ] Hostname: DESKTOP-6BES62I
+[2024-09-01T16:48:13.372127 1636 ] Working directory: D:/python/DoðrusalRegrasyon.build
+[2024-09-01T16:48:13.372149 1636 ] Compiler: C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe
+[2024-09-01T16:48:13.372161 1636 ] Compiler type: gcc
+[2024-09-01T16:48:13.372568 1636 ] Source file: static_src\MainProgram.c
+[2024-09-01T16:48:13.372584 1636 ] Object file: static_src\MainProgram.o
+[2024-09-01T16:48:13.372780 1636 ] Trying direct lookup
+[2024-09-01T16:48:13.373099 1636 ] Manifest key: 7521asc98nnraifrjup1i6fd7p84uacc8
+[2024-09-01T16:48:13.373338 1636 ] Retrieved 7521asc98nnraifrjup1i6fd7p84uacc8 from local storage (C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/5/21asc98nnraifrjup1i6fd7p84uacc8M)
+[2024-09-01T16:48:13.568544 1636 ] Got result key from manifest
+[2024-09-01T16:48:13.568586 1636 ] Result key: 36dfpuskn4n832qh8nc781888spipte3c
+[2024-09-01T16:48:13.568786 1636 ] Retrieved 36dfpuskn4n832qh8nc781888spipte3c from local storage (C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/6/dfpuskn4n832qh8nc781888spipte3cR)
+[2024-09-01T16:48:13.569122 1636 ] Reading embedded entry #0 .o (58583 bytes)
+[2024-09-01T16:48:13.569141 1636 ] Writing to static_src\MainProgram.o
+[2024-09-01T16:48:13.569863 1636 ] Succeeded getting cached result
+[2024-09-01T16:48:13.569926 1636 ] Result: direct_cache_hit
+[2024-09-01T16:48:13.569939 1636 ] Result: local_storage_hit
+[2024-09-01T16:48:13.569950 1636 ] Result: local_storage_read_hit
+[2024-09-01T16:48:13.569960 1636 ] Result: local_storage_read_hit
+[2024-09-01T16:48:13.569983 1636 ] Acquiring C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/6/4/stats.lock
+[2024-09-01T16:48:13.571011 1636 ] Acquired C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/6/4/stats.lock
+[2024-09-01T16:48:13.571880 1636 ] Releasing C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/6/4/stats.lock
+[2024-09-01T16:48:13.571975 1636 ] Released C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/6/4/stats.lock
+[2024-09-01T16:48:15.246577 9688 ] === CCACHE 4.8.2 STARTED =========================================
+[2024-09-01T16:48:15.246657 9688 ] Configuration file: C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache\ccache.conf
+[2024-09-01T16:48:15.246672 9688 ] System configuration file: C:\ProgramData\ccache\ccache.conf
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) absolute_paths_in_stderr = false
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) base_dir = 
+[2024-09-01T16:48:15.246672 9688 ] Config: (environment) cache_dir = C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) compiler = 
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) compiler_check = mtime
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) compiler_type = auto
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) compression = true
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) compression_level = 0
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) cpp_extension = 
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) debug = false
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) debug_dir = 
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) depend_mode = false
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) direct_mode = true
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) disable = false
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) extra_files_to_hash = 
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) file_clone = false
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) hard_link = false
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) hash_dir = true
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) ignore_headers_in_manifest = 
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) ignore_options = 
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) inode_cache = true
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) keep_comments_cpp = false
+[2024-09-01T16:48:15.246672 9688 ] Config: (environment) log_file = D:\python\DoðrusalRegrasyon.build\ccache-8620.txt
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) max_files = 0
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) max_size = 5.0 GiB
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) msvc_dep_prefix = Note: including file:
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) namespace = 
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) path = 
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) pch_external_checksum = false
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) prefix_command = 
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) prefix_command_cpp = 
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) read_only = false
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) read_only_direct = false
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) recache = false
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) remote_only = false
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) remote_storage = 
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) reshare = false
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) run_second_cpp = true
+[2024-09-01T16:48:15.246672 9688 ] Config: (environment) sloppiness = include_file_ctime, include_file_mtime
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) stats = true
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) stats_log = 
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) temporary_dir = C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2024-09-01T16:48:15.246672 9688 ] Config: (default) umask = 
+[2024-09-01T16:48:15.246765 9688 ] Command line: C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\ccache.exe C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe -o static_src\CompiledFunctionType.o -c -std=c11 -flto=1 -fuse-linker-plugin -fno-fat-lto-objects -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -D_NUITKA_FILE_REFERENCE_ORIGINAL_MODE -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\zlib -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\include -I. -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\include -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\static_src -IC:\Users\yenio\AppData\Local\Programs\Python\PYTHON~1\Lib\SITE-P~1\nuitka\build\inline_copy\libbacktrace static_src\CompiledFunctionType.c
+[2024-09-01T16:48:15.251275 9688 ] Hostname: DESKTOP-6BES62I
+[2024-09-01T16:48:15.251304 9688 ] Working directory: D:/python/DoðrusalRegrasyon.build
+[2024-09-01T16:48:15.251326 9688 ] Compiler: C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\DOWNLO~1\gcc\x86_64\13.2.0-16.0.6-11.0.1-msvcrt-r1\mingw64\bin\gcc.exe
+[2024-09-01T16:48:15.251356 9688 ] Compiler type: gcc
+[2024-09-01T16:48:15.251782 9688 ] Source file: static_src\CompiledFunctionType.c
+[2024-09-01T16:48:15.251798 9688 ] Object file: static_src\CompiledFunctionType.o
+[2024-09-01T16:48:15.251991 9688 ] Trying direct lookup
+[2024-09-01T16:48:15.252592 9688 ] Manifest key: c47bgfjttd6lf0hrcr83gie4l2h7o41h8
+[2024-09-01T16:48:15.252779 9688 ] Retrieved c47bgfjttd6lf0hrcr83gie4l2h7o41h8 from local storage (C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/4/7bgfjttd6lf0hrcr83gie4l2h7o41h8M)
+[2024-09-01T16:48:15.605724 9688 ] Got result key from manifest
+[2024-09-01T16:48:15.605772 9688 ] Result key: 68b3d9d9um0b6djq6l3ok7mvedkstpfag
+[2024-09-01T16:48:15.647014 9688 ] Retrieved 68b3d9d9um0b6djq6l3ok7mvedkstpfag from local storage (C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/6/8/b3d9d9um0b6djq6l3ok7mvedkstpfagR)
+[2024-09-01T16:48:15.653165 9688 ] Reading embedded entry #0 .o (3699978 bytes)
+[2024-09-01T16:48:15.653205 9688 ] Writing to static_src\CompiledFunctionType.o
+[2024-09-01T16:48:15.655120 9688 ] Succeeded getting cached result
+[2024-09-01T16:48:15.655433 9688 ] Result: direct_cache_hit
+[2024-09-01T16:48:15.655449 9688 ] Result: local_storage_hit
+[2024-09-01T16:48:15.655460 9688 ] Result: local_storage_read_hit
+[2024-09-01T16:48:15.655471 9688 ] Result: local_storage_read_hit
+[2024-09-01T16:48:15.655493 9688 ] Acquiring C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/8/stats.lock
+[2024-09-01T16:48:15.656516 9688 ] Acquired C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/8/stats.lock
+[2024-09-01T16:48:15.657265 9688 ] Releasing C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/8/stats.lock
+[2024-09-01T16:48:15.657362 9688 ] Released C:\Users\yenio\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/8/stats.lock

@@ -1,0 +1,8 @@
+import time
+
+def PR(a):
+    return a;
+
+
+print(PR("a"))
+print(time.time())
