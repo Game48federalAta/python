@@ -6,7 +6,7 @@ import io
 from pytube import YouTube
 from pytube.exceptions import VideoUnavailable
 
-API_KEY = "AIzaSyD0ozKgF6MZHiTrEk1N7V0GThHDO1wcshw"
+API_KEY = "API KEY"
 
 def download(url):
     try:
@@ -79,5 +79,6 @@ for index, item in enumerate(results["items"]):
         command=lambda url=video_url: download(url)
     )
     download_button.grid(row=index, column=2, padx=10)
+
 
 root.mainloop()
