@@ -8,7 +8,7 @@ from PIL import Image, ImageTk
 import io
 import yt_dlp
 
-API_KEY = "AIzaSyD0ozKgF6MZHiTrEk1N7V0GThHDO1wcshw"
+API_KEY = "API_key"
 
 
 filepath = ""
@@ -392,3 +392,4 @@ root.mainloop()
 
 print(dirname)
 print(filepath)
+
