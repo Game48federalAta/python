@@ -1,0 +1,288 @@
+model.py
+
+*************
+import torch
+import torch.nn as nn
+import torch.optim as optim
+
+
+class SimpleNN(nn.Module):
+    def __init__(self):
+        super(SimpleNN, self).__init__()
+        self.fc1 = nn.Linear(3, 10)
+        self.fc2 = nn.Linear(10, 10)
+        self.fc3 = nn.Linear(10, 1)
+
+    def forward(self, x):
+        x = torch.relu(self.fc1(x))
+        x = torch.relu(self.fc2(x))
+        x = self.fc3(x)
+        return x
+
+
+class EnhancedNN(nn.Module):
+    def __init__(self):
+        super(EnhancedNN, self).__init__()
+        self.fc1 = nn.Linear(3, 64)
+        self.fc2 = nn.Linear(64, 64)
+        self.fc3 = nn.Linear(64, 1)  # Regression output
+
+    def forward(self, x):
+        x = torch.relu(self.fc1(x))
+        x = torch.relu(self.fc2(x))
+        x = self.fc3(x)
+        return x
+
+
+model = SimpleNN()  # Modelin başlatılması
+criterion = nn.MSELoss()
+optimizer = optim.SGD(model.parameters(), lr=0.01)
+
+
+def train_model(a, b, operation):
+    model.train()
+    input_data = torch.tensor(
+        [[a, b, ["+", "-", "*", "/"].index(operation)]], dtype=torch.float32
+    )
+    correct_result = torch.tensor([[eval(f"{a} {operation} {b}")]], dtype=torch.float32)
+
+    optimizer.zero_grad()
+    output = model(input_data)
+    loss = criterion(output, correct_result)
+    loss.backward()
+    optimizer.step()
+
+
+def test_model(a, b, operation):
+    model.eval()
+    input_data = torch.tensor(
+        [[a, b, ["+", "-", "*", "/"].index(operation)]], dtype=torch.float32
+    )
+    correct_result = eval(f"{a} {operation} {b}")
+    with torch.no_grad():
+        output = model(input_data)
+        predicted = output.item()
+    return abs(predicted - correct_result) < 1.0  # Tahmin doğruysa True döndür
+
+
+def save_model(path="trained_model.pth"):
+    torch.save(model.state_dict(), path)
+
+
+def load_model(path="trained_model.pth"):
+    model.load_state_dict(torch.load(path))
+    model.eval()
+**********
+
+trainer.py
+
+# trainer.py
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from model import EnhancedNN
+from torch.utils.data import DataLoader, Dataset
+import random
+import time
+
+
+class RandomArithmeticDataset(Dataset):
+    def __init__(self, size):
+        self.size = size
+        self.data, self.labels = self.generate_data()
+
+    def generate_data(self):
+        data = []
+        labels = []
+        for _ in range(self.size):
+            a = random.randint(1, 10)
+            b = random.randint(1, 10)
+            operation = random.choice(["+", "-", "*", "/"])
+            if operation == "/":
+                b = random.randint(1, 10)  # Avoid division by zero
+            correct_result = eval(f"{a} {operation} {b}")
+            label = (
+                0
+                if operation == "+"
+                else (1 if operation == "-" else (2 if operation == "*" else 3))
+            )
+            data.append([a, b, label])
+            labels.append(correct_result)
+        return torch.tensor(data, dtype=torch.float32), torch.tensor(
+            labels, dtype=torch.float32
+        )
+
+    def __len__(self):
+        return self.size
+
+    def __getitem__(self, idx):
+        return self.data[idx], self.labels[idx]
+
+
+def calculate_accuracy(preds, labels):
+    correct = 0
+    total = len(labels)
+    for pred, label in zip(preds, labels):
+        if round(pred) == round(label):
+            correct += 1
+    return (correct / total) * 100
+
+
+def train_model(
+    model, train_loader, criterion, optimizer, num_epochs=10, accuracy_threshold=80.0
+):
+    best_accuracy = 0.0
+    start_time = time.time()
+
+    for epoch in range(num_epochs):
+        model.train()
+        running_loss = 0.0
+        all_preds = []
+        all_labels = []
+
+        for inputs, labels in train_loader:
+            optimizer.zero_grad()
+            outputs = model(inputs).squeeze()  # Ensure outputs are 1D
+            labels = labels.squeeze()  # Ensure labels are 1D
+
+            loss = criterion(outputs, labels)
+            loss.backward()
+            optimizer.step()
+
+            running_loss += loss.item()
+            all_preds.extend(outputs.tolist())
+            all_labels.extend(labels.tolist())
+
+        # Calculate accuracy
+        accuracy = calculate_accuracy(all_preds, all_labels)
+        print(
+            f"Epoch {epoch + 1}/{num_epochs}, Loss: {running_loss / len(train_loader)}, Accuracy: {accuracy:.2f}%"
+        )
+
+        # Check if accuracy is above the threshold
+        if accuracy >= accuracy_threshold:
+            torch.save(model.state_dict(), "trained_model.pth")
+            print(f"Model saved with accuracy: {accuracy:.2f}%")
+            end_time = time.time()
+            elapsed_time = end_time - start_time
+            minutes, seconds = divmod(int(elapsed_time), 60)
+            print(f"Training completed in {minutes} minutes and {seconds} seconds")
+            return model, True
+
+        best_accuracy = max(best_accuracy, accuracy)
+
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    minutes, seconds = divmod(int(elapsed_time), 60)
+    print(f"Training completed in {minutes} minutes and {seconds} seconds")
+
+    return model, False
+
+
+if __name__ == "__main__":
+    model = EnhancedNN()
+    criterion = nn.MSELoss()  # Use MSELoss for regression
+    optimizer = optim.Adam(model.parameters(), lr=0.001)
+    dataset = RandomArithmeticDataset(size=1000)  # Use a large enough dataset
+    train_loader = DataLoader(dataset, batch_size=32, shuffle=True)
+
+    accuracy_threshold = 95.0
+    num_epochs = 20
+
+    while True:
+        print("Starting a new training session...")
+        model, success = train_model(
+            model,
+            train_loader,
+            criterion,
+            optimizer,
+            num_epochs=num_epochs,
+            accuracy_threshold=accuracy_threshold,
+        )
+
+        # Break if the accuracy threshold is met
+        if success:
+            print(f"Stopping training since the accuracy reached {accuracy_threshold}%")
+            break
+
+        time.sleep(1)  # Wait for 10 seconds before restarting the training
+
+
+use_model.py
+
+# use_model.py
+import torch
+from model import EnhancedNN
+import random
+
+
+def load_model(model_path):
+    model = EnhancedNN()
+    model.load_state_dict(torch.load(model_path, map_location=torch.device("cpu")))
+    model.eval()
+    return model
+
+
+def predict(model, inputs):
+    with torch.no_grad():
+        outputs = model(inputs).squeeze()  # Ensure outputs are 1D
+    return outputs
+
+
+def calculate_accuracy(preds, labels):
+    correct = 0
+    total = len(labels)
+    for pred, label in zip(preds, labels):
+        if round(pred) == round(label):
+            correct += 1
+    return (correct / total) * 100
+
+
+if __name__ == "__main__":
+    model = load_model("trained_model.pth")
+
+    all_preds = []
+    all_labels = []
+
+    for _ in range(100):
+        a = random.randint(1, 10)
+        b = random.randint(1, 10)
+        operation = random.choice(["+", "-", "*", "/"])
+
+        if operation == "/":
+            b = random.randint(1, 10)  # Avoid division by zero
+
+        # Calculate the correct result
+        correct_result = eval(f"{a} {operation} {b}")
+
+        # Encode inputs in the format expected by the model
+        input_data = torch.tensor(
+            [
+                [
+                    a,
+                    b,
+                    (
+                        0
+                        if operation == "+"
+                        else (1 if operation == "-" else (2 if operation == "*" else 3))
+                    ),
+                ]
+            ],
+            dtype=torch.float32,
+        )
+
+        # Predict result
+        result = predict(model, input_data)
+
+        # Collect predictions and labels for accuracy calculation
+        all_preds.append(result.item())
+        all_labels.append(correct_result)
+
+        # Print input and result
+        print(
+            f"Input: {a} {operation} {b}, Predicted result: {result.item()}, Correct result: {correct_result}"
+        )
+
+    # Calculate and print accuracy
+    accuracy = calculate_accuracy(all_preds, all_labels)
+    print(f"Overall Accuracy: {accuracy:.2f}%")
